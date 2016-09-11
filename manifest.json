@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Zillow Lot Size Filter Extension",
+	"version": "1.0",
+
+	"description": "Extends the lot size filter options to include larger acreages on Zillow.com.",
+
+	"icons": {
+		"48": "icons/zillow-48.png",
+		"96": "icons/zillow-96.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.zillow.com/*"],
+			"js": ["zillowLotSizeFilterExtension.js"]
+		}
+	]
+}
